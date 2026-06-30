@@ -1,0 +1,278 @@
+HTML
+<!DOCTYPE html>
+<html>
+<head>
+    <title>chikamso prosper | portfolio</title>
+	<meta name="viewport"
+	content="width=device-width,
+	initial-scale=1.0">
+	<style>
+	html {
+	    scroll-behaviour: smooth;
+	}
+	:root {
+	    --main-color: #1e3a8a;
+		--text-color: white;
+		--card-color: white;
+	}
+	body {
+	    background-color: #f4f7fb;
+		font-family: Arial, sans-serif;
+		color: #333;
+		margin: 0;
+    }
+	nav {
+	    background-color: black;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 30px;
+		position: sticky;
+		top: 0;
+	}
+	nav a {
+	    color: white;
+		text-decoration: none;
+		margin-right: 20px;
+	}
+	nav a:hover {
+	    color: yellow;
+	}
+	h1 {
+	   color: white;
+	   text-align: center;
+	   font-size: 40px;
+	}
+	footer {
+	    background-color: black;
+		color: white;
+		text-align: center;
+		padding: 20px;
+		margin-top: 30px;
+	}
+section {
+    background-color: var(--card-color);
+	padding: 25px;
+	margin: 30px auto;
+	border-radius: 10px;
+	box-shadow: 0px 4px 8px gray;
+	width: 90%;
+	max-width: 900px;
+}
+header img {
+    border-radius: 50%;
+    border: 4px solid white;
+}
+.skill {
+    display: flex;
+	gap: 20px;
+}
+.card {
+    background-color: white;
+	border: 2px solid blue;
+	padding: 20px;
+	border-radius: 10px;
+}
+header {
+    background-color: var(--main-color);
+	color: var[--text-color];
+    text-align: center;
+	padding: 60px 20px;
+}
+header p {
+    font-size: 18px;
+}
+header button {
+    background-color: blue;
+	color: white;
+	border: none;
+	padding: 12px 25px;
+	border-radius: 8px;
+	font-size: 16px;
+	margin: 10px;
+	box-shadow: 0px 4px 8px gray;
+}
+header button {
+    transition: 0.3s;
+}
+header button:hover {
+    background-color: darkblue;
+	cursor: pointer;
+	transform: scale(1.05);
+}
+.about-card {
+    background-color: white;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 8px gray;
+}
+.project {
+    margin: 20px;
+}
+.project .card {
+    background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 8px gray;
+}
+.goals {
+    background-color: white;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0px 4px 8px gray;
+}
+section a {
+    color: blue;
+	text-decoration: none;
+}
+section a:hover {
+    text-decoration: underline;
+}
+.profile-summary {
+    background-color: white;
+	padding: 20px;
+	margin: 20p;
+	border-radius: 10px;
+	box-shadow: 0px 4px 8px gray;
+}
+.profile-summary p {
+    font-size: 18px;
+}
+.social {
+    background-color: white;
+	padding: 20px;
+	margin: 20px;
+	bolder-radius: 10px;
+	box-shadow: 0px 4px 8px gray;
+}
+.social a {
+    color: blue;
+	text-decoration: none;
+	font-size: 18px;
+}
+.social a:hover {
+    color: darkblue;
+	text-decoration: underline;
+}
+.profile-pic {
+    width: 200px;
+	max-width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+.logo {
+    color: white;
+	font-size: 24px;
+	font-weight: bold;
+	display: inline;
+	margin-right: 30px;
+}
+.menu a {
+    color: white;
+	text-decoration: none;
+	margin-left: 20px;
+	font-weight: bold;
+}
+.menu a:hover {
+    color: yellow;
+}
+section h2 {
+    text-align: center;
+	color: #1e3a8a;
+	font-size: 30px;
+}
+section p {
+    line-height: 1.7;
+}
+	</style>
+</head>
+<body>
+    <!-- We will build our project here -->
+<nav>
+    <div class="logo">chikamso prosper</div>
+	<div class="menu">
+        <a href="#">Home</a>
+	    <a href="#about">About</a>
+	    <a href="#project">project</a>
+	    <a href="#contact">Contact</a>
+	</div>
+</nav>
+<header>
+	<img
+src="bf14b5533810ae6640f805b543dba265.jpg"
+         alt="My profile picture"
+		 class="profile-pic">
+    <h1>Hi, I'm Chikamso Prosper 👋</h1>
+	<p>Aspiring computer scientist from Nigeria</p>
+	<p>Aspiring Computer Scientist | Web Developer in Traning | Footwear Creator</p>
+	<button>Contact Me</button>
+	<button>View My Projects</button>		
+    <button>Download My Cv</button>	
+</header>
+<section class="profile-summary">
+    <h2>profile summary</h2>
+	<p><strong>Name:</strong> Chikamso prosper</p>
+	<p><strong>country:</strong> Nigeria</p>
+	<p><strong>carrier Goal:</strong> Computer Scientist</p>
+	<p><strong>passion:</strong> Solving problems with technology</p>
+	<p><strong>other skill:</strong> Footwear Creator</p>
+</section>
+<section id="about" class="about-card">
+    <h2>About Me</h2>
+	<p>Hello! My name is <b>chikamso prosper</b>, and I am from Nigeria.</p>
+	<p>I am an anspiring computer scientist with a passion for coding and using technology to solve real-world problems. Every day, I work improving my programming skills and learning new things about web development.</p>
+	<p>My goal is to become a successful scientist who create innovative solutions that make people's lives better. I believe that creativity, curiosity, and continious learning are the keys to achieving great things.</p>
+	<p>I am a friendly, creative, and curious person who enjoys taking on new challenges and growing as a developer. This website is part of my journey, and I look forward to sharing my progress with the world.</p>
+	<p>In addition to my passion for technology, I also make quality footwear. I enjoy creating products with care and creativity, and I believe both craftmanship and technology can be used to solve real-world problems and improve people's lives.</p>
+</section>
+</section>
+<section>
+    <h2>My Skills</h2>
+	<div Class="skills">
+	    <div class="card">HTML</div>
+	    <div class="card">CSS</div>
+		<div class="card">Javascript</div>
+	</div>
+</section>
+<section id="project" class="project">
+    <h2>My Project</h2>
+	<div class ="card">
+	    <h3>Personal Portfolio Website</h3>
+		<p>This is my first portfolio website, built using HTML and CSS as i learn web development.</P>
+	</div>
+</section>
+<section class="goal">
+	<h2>My Goals</h2>
+	<ul>
+	    <li>Grow my footwear business while bilding my carrier in technology.</li>
+	    <li>Become a professional computer scientist.</li>
+		<li>Build websites and web applications that solve real-world problems.</li>
+		<li>Continue improving my programming skills every day.</li>
+		<li>Create innovative technology that helps people.</li>
+	<ul>
+</section>
+<section id="contact">
+    <h2>Contact Me</h2>
+	<p>Email: 
+	    <a
+	href="mailto:chikamsoprosper2008@gmail.com">
+		chikamsoprosper2008@gmail.com
+		</a>
+	</p>
+</section>
+<section class="social">
+    <h2>Connect With Me</h2>
+	<a
+href="https://www.facebook.com/profile.php?id=61571587648793">Facebook</a><br><br>
+    <a
+href="https://wa.me/2347019744000">Whatsapp</a><br><br>
+    <a
+href="https://tiktok.com/@loverboydaily">Tiktok</a>
+</section>
+<footer>
+    <p>© 2026 chikamso prosper. All right reserved.</p>
+</footer>
+</body>
+</html>
