@@ -14,10 +14,10 @@ Projects section
 Contact section
 CV download button
 Live Demo
-(Add your GitHub Pages website link here)
+(https://github.com/chikamsoprosper)
 Screenshot
 (Add a picture of your website here)
 Author
 Chikamso Prosper
-GitHub: (your GitHub profile link)
-LinkedIn: (your LinkedIn link)
+GitHub: (https://github.com/chikamsoprosper)
+LinkedIn: ()
