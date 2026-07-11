@@ -3,7 +3,7 @@ A personal portfolio website created to showcase my skills, projects, and experi
 About The Project
 This website was built to introduce myself, display my projects, and allow people to contact me.
 Built With
-HTML
+HTML 
 CSS
 JavaScript
 Features
@@ -20,4 +20,4 @@ Screenshot
 Author
 Chikamso Prosper
 GitHub: (https://github.com/chikamsoprosper)
-LinkedIn: ()
+LinkedIn: (https://www.linkedin.com/in/chikamso-prosper-52062b421)
