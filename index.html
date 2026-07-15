@@ -1,0 +1,835 @@
+HTML
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Prosperous Studios | Web Developer, Graphic Designer & Quality Footwear in Nigeria</title>
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="images/logo.png">
+<meta name="description" content="Prosperous Studios offers web development, graphic design and quality footwear in Nigeria.">
+<meta name="author" content="Chikamso Prosper">
+<meta name="keywords" content="Web Developer, Graphic Designer, Footwear, Nigeria, HTML, CSS, JavaScript, Prosperous Studios">
+<meta name="robots" content="index, follow">
+<meta name="theme-color" content="#1e3a8a">
+	<style>
+	*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+	}
+	html {
+	    scroll-behavior: smooth;
+	}
+	:root {
+	    --main-color: #1e3a8a;
+		--text-color: white;
+		--card-color: white;
+	}
+	body {
+	    background-color: #f4f7fb;
+		font-family: Arial, sans-serif;
+		color: #333;
+		margin: 0;
+    }
+	nav {
+	    background-color: black;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 30px;
+		position: sticky;
+		top: 0;
+	}
+	nav a {
+	    color: white;
+		text-decoration: none;
+		margin-right: 20px;
+	}
+	nav a:hover {
+	    color: yellow;
+	}
+	h1 {
+	   color: white;
+	   text-align: center;
+	   font-size: 40px;
+	}
+section {
+    background-color: var(--card-color);
+	padding: 25px;
+	margin: 30px auto;
+	border-radius: 10px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+	width: 90%;
+	max-width: 900px;
+}
+.skills {
+    display: flex;
+	gap: 20px;
+}
+.card {
+    background-color: white;
+	border: 2px solid blue;
+	padding: 20px;
+	border-radius: 15px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.15)
+}
+header {
+    background-color: var(--main-color);
+	color: var(--text-color);
+    text-align: center;
+	padding: 60px 20px;
+}
+header p {
+    font-size: 18px;
+}
+header p{
+    max-width:700px;
+	margin:10px auto;
+}
+header button {
+    background-color: blue;
+	color: white;
+	border: none;
+	padding: 12px 25px;
+	border-radius: 8px;
+	font-size: 16px;
+	margin: 10px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+header button:hover {
+    background-color: darkblue;
+	cursor: pointer;
+	transform: scale(1.05);
+}
+.about-card {
+    background-color: white;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 10px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.project {
+    margin: 20px;
+}
+.project .card {
+    background-color: white;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.goals {
+    background-color: white;
+	margin: 20px;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+section a {
+    color: blue;
+	text-decoration: none;
+}
+section a:hover {
+    text-decoration: underline;
+}
+.profile-summary {
+    background-color: white;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 10px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.profile-summary p {
+    font-size: 18px;
+}
+.social {
+    background-color: white;
+	padding: 20px;
+	margin: 20px;
+	border-radius: 10px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.social a {
+    color: blue;
+	text-decoration: none;
+	font-size: 18px;
+}
+.social a:hover {
+    color: darkblue;
+	text-decoration: underline;
+}
+.profile-pic {
+    width: 200px;
+	max-width: 100%;
+	height: auto;
+	border-radius: 50%;
+}
+.logo {
+    color: white;
+	font-size: 24px;
+	font-weight: bold;
+	display: inline;
+	margin-right: 30px;
+}
+.logo a{
+    color:white;
+	text-decoration:none;
+}
+.logo a:hover{
+    color:yellow;
+}
+.menu a {
+    color: white;
+	text-decoration: none;
+	margin-left: 20px;
+	font-weight: bold;
+}
+.menu a:hover {
+    color: yellow;
+}
+section h2 {
+    text-align: center;
+	color: #1e3a8a;
+	font-size: 30px;
+}
+section p {
+    line-height: 1.7;
+}
+.services .skills {
+    display: flex;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+.services .card {
+    flex: 1;
+	min-width: 250px;
+}
+.project img {
+    width: 100%;
+	height: 220px;
+	object-fit: cover;
+	border-radius: 10px;
+	margin-bottom: 15px;
+}
+.project button {
+    background-color: #1e3a8a;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+.project button:hover {
+    background-color: #16306d;
+}
+.gallery {
+    display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	justify-content: center;
+}
+.gallery img {
+    width: 280px;
+	height: 220px;
+	object-fit: cover;
+	border-radius: 10px;
+	box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+	transition: 0.3s;
+}
+.gallery img:hover {
+    transform: scale(1.05);
+}
+#testimonials {
+    margin: 30px auto;
+}
+.testimonial-card {
+    background: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-left: 5px solid #1e3a8a;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+.testimonial-card h4 {
+    color: #1e3a8a;
+    margin-top: 15px;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+form input,
+form textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+form button {
+    background: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+}
+form button:hover {
+    background: #16306d;
+}
+.hire-me {
+    background-color: #1e3a8a;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-radius: 10px;
+}
+.hire-me h2 {
+    color: white;
+}
+.hire-me p {
+    font-size: 18px;
+}
+.hire-me button {
+    background-color: white;
+    color: #1e3a8a;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+.hire-me button:hover {
+    background-color: #f0f0f0;
+}
+.why-me .skills {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.why-me .card {
+    flex: 1;
+    min-width: 250px;
+}
+.faq .card {
+    margin-bottom: 20px;
+}
+.stats .skills {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.stats .card {
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+.stats h3 {
+    font-size: 40px;
+    color: #1e3a8a;
+}
+footer {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    margin-top: 40px;
+}
+footer h3 {
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+footer p {
+    margin: 8px 0;
+    font-size: 16px;
+}
+.process .skills {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.process .card {
+    flex: 1;
+    min-width: 250px;
+}
+.quote {
+    background-color: #f8f9fa;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 10px;
+}
+.quote button {
+    background-color: #1e3a8a;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.quote button:hover {
+    background-color: #16306d;
+}
+.tools .skills {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.tools .card {
+    flex: 1;
+    min-width: 250px;
+}
+.business-hours .card {
+    text-align: center;
+}
+.location .card {
+    text-align: center;
+}
+img{
+max-width:100%;
+height:auto;
+}
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu {
+        margin-top: 15px;
+    }
+    .menu a {
+        display: block;
+        margin: 10px 0;
+    }
+    .skills {
+        flex-direction: column;
+    }
+    .profile-pic {
+        width: 150px;
+    }
+    header h1 {
+        font-size: 30px;
+    }
+    header p {
+        font-size: 16px;
+    }
+    header button {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+button {
+    transition: 0.3s;
+}
+button:hover {
+   transform: translateY(-3px);
+}
+.card:hover{
+transform:translateY(-8px);
+}
+.back-top{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#1e3a8a;
+    color:white;
+    padding:12px 18px;
+    border-radius:50px;
+    text-decoration:none;
+    font-weight:bold;
+    box-shadow:0 5px 10px rgba(0,0,0,.3);
+}
+.back-top:hover{
+    background:#16306d;
+}
+.quick-links{
+    margin-top:20px;
+}
+.quick-links h4{
+    margin-bottom:15px;
+}
+.quick-links a{
+    color:white;
+    text-decoration:none;
+    display:block;
+    margin:8px 0;
+}
+.quick-links a:hover{
+    color:yellow;
+}
+	</style>
+</head>
+<body id="top">
+<nav>
+    <div class="logo">
+	    <a href="#top">Prosperous Studios</a>
+	</div>
+	<div class="menu">
+        <a href="#top">Home</a>
+	    <a href="#about">About</a>
+		<a href="#service">Services</a>
+	    <a href="#project">Projects</a>
+		<a href="#gallery">Gallery</a>
+	    <a href="#contact">Contact</a>
+	</div>
+</nav>
+<header>
+	<img 
+	src="images/profile.jpg"
+         alt="Portrait of Chikamso Prosper"
+		 loading="lazy"
+		 class="profile-pic">
+	<p>Welcome to Prosperous Studios</p>
+    <h1 id="welcome">Hi, I'm Chikamso Prosper 👋</h1>
+	<p>Aspiring computer scientist from Nigeria</p>
+	<p>Web Developer • Graphic Designer •  Quality Slippers & Shoes</p>
+	<p><strong>Helping businesses and individuals build beautiful websites, creative designs and quality footwear.</strong></p> 
+<a href="#contact">
+	<button>📞Contact Me</button>
+</a>
+<a href="#project">
+	<button>💻View My Projects</button>
+</a>
+<a href="Chikamso_Prosper_CV.pdf" download>
+	<button>📄Download My CV</button>
+</a>	
+</header>
+<section class="profile-summary"
+id="summary">
+    <h2>profile summary</h2>
+	<p><strong>Name:</strong> Chikamso prosper</p>
+	<p><strong>Country:</strong> Nigeria</p>
+	<p><strong>Career Goal:</strong> Become a Professional Computer Scientist</p>
+	<p><strong>Passion:</strong> Solving real-World problems through technology</p>
+	<p><strong>Services:</strong> Web Development, Graphic Design, and Quality Slippers & Shoes</p>
+</section>
+<section id="about" class="about-card">
+    <h2>About Me</h2>
+	<p>Hello! My name is <b>Chikamso Prosper</b>, and I am from Nigeria.</p>
+	<p>I am an aspiring computer scientist with a passion for coding and using technology to solve real-world problems. Every day, I work to improve my programming skills and learning new technology in web development.</p>
+	<p>My goal is to become a successful scientist who creates innovative solutions that make people's lives better. I believe that creativity, curiosity, and continuous learning are the keys to achieving great things.</p>
+	<p>I am a friendly, creative, and curious person who enjoys taking on new challenges and growing as a developer. This website is part of my journey, and I look forward to sharing my progress with the world.</p>
+	<p>I enjoy working with clients to create websites, graphics, and footwear that combine creativity, quality, and functionality. Every project is an opportunity for me to learn, improve, and deliver excellent results.</p>
+	<p>In addition to my passion for technology, I am also a graphic designer and a creator of quality footwear. I enjoy designing eye-catching visuals, building modern websites, and producing high quality slippers and shoes. My goal is to combine creativity, technology, and craftsmanship to deliver outstanding solutions and products to my clients.</p>
+</section>
+<section>
+    <h2>My Skills</h2>
+	<div class="skills">
+	    <div class="card">HTML</div>
+	    <div class="card">CSS</div>
+		<div class="card">JavaScript</div>
+		<div class="card">Responsive Web Design</div>
+		<div class="card">Graphic Design</div>
+		<div class="card">Quality Footwear</div>
+	</div>
+</section>
+<section class="tools">
+    <h2>Tools I Use</h2>
+    <div class="skills">
+        <div class="card">
+            <h3>💻 Notepad++</h3>
+            <p>I use Notepad++ to write and edit my HTML, CSS and JavaScript code.</p>
+        </div>
+        <div class="card">
+            <h3>🌐 GitHub</h3>
+            <p>I use GitHub to manage and publish my web projects.</p>
+        </div>
+        <div class="card">
+            <h3>🎨 Canva</h3>
+            <p>I create professional graphic designs using modern design tools.</p>
+        </div>
+    </div>
+</section>
+<section id="service" class="services">
+    <h2>My Services</h2>
+	<div class="skills">
+	    <div class="card">
+		    <h3>💻 Web Development</h3>
+			<p>I build modern, responsive, and professional websites for businesses, brands, and individuals.</p>
+		</div>
+		<div class="card">
+		     <h3>🎨 Graphic Design</h3>
+		<p>I design logos, flyers, banners, business cards and attractive social media graphics.</p>
+		</div>
+		<div class="card">
+		    <h3>👞 Quality Slippers & Shoes</h3>
+			<p>I create quality slippers and shoes that combine comfort, durability, and stylish designs.</p>
+	</div>
+	</div>
+</section>
+<section class="why-me">
+    <h2>Why Choose Me?</h2>
+    <div class="skills">
+        <div class="card">
+            <h3>⭐ Quality Work</h3>
+            <p>I create professional websites, eye-catching graphic designs, and quality footwear that meet my clients' needs and expectations.</p>
+        </div>
+        <div class="card">
+            <h3>⏰ On-Time Delivery</h3>
+            <p>I value my clients' time and always work hard to deliver projects on schedule.</p>
+        </div>
+        <div class="card">
+            <h3>🤝 Customer Satisfaction</h3>
+            <p>I listen carefully to my clients' needs and work with them until they are satisfied with the final result.</p>
+        </div>
+    </div>
+</section>
+<section class="process">
+    <h2>How I Work</h2>
+    <div class="skills">
+        <div class="card">
+            <h3>1️⃣ Consultation</h3>
+            <p>I discuss your ideas, goals and requirements to understand your project.</p>
+        </div>
+        <div class="card">
+            <h3>2️⃣ Design & Development</h3>
+            <p>I carefully design and develop your project while paying close attention to quality and detail.</p>
+        </div>
+        <div class="card">
+            <h3>3️⃣ Delivery</h3>
+            <p>I deliver the completed project, answer any questions, and ensure you're satisfied with the final result.</p>
+        </div>
+    </div>
+</section>
+<section class="quote">
+    <h2>Request a Free Quote</h2>
+    <p>Every project is different. Tell me what you need, and I'll provide a free quotation based on your requirements.</p>
+	<p>No obligation. Tell me about your project, and i'll get back to you with a suitable quote.</p>
+    <a href="#contact">
+        <button>Request a Quote</button>
+    </a>
+</section>
+<section class="stats">
+    <h2>My Achievements</h2>
+    <div class="skills">
+        <div class="card">
+            <h3>1+</h3>
+            <p>Website Built</p>
+        </div>
+        <div class="card">
+            <h3>10+</h3>
+            <p>Graphic Designs Created</p>
+        </div>
+        <div class="card">
+            <h3>20+</h3>
+            <p>Quality Footwear Produced</p>
+        </div>
+    </div>
+</section>
+<section class="experience">
+    <h2>My Mission</h2>
+    <p>
+        My mission is to combine technology, creativity, and craftsmanship to build websites, create beautiful designs, and produce quality footwear that people can trust.
+    </p>
+</section>
+<section class="business-hours">
+    <h2>Business Hours</h2>
+    <div class="card">
+        <p><strong>Monday - Friday:</strong> 8:00 AM - 6:00 PM</p>
+        <p><strong>Saturday:</strong> 9:00 AM - 4:00 PM</p>
+        <p><strong>Sunday:</strong> Closed (Emergency enquiries only)</p>
+        <p>
+            I usually respond to messages within 24 hours.
+        </p>
+		<p>
+		    For urgent enquiries, please contact me through Whatsapp for a faster response.
+		</p>
+    </div>
+</section>
+<section class="location">
+    <h2>My Location</h2>
+    <div class="card">
+        <p>
+            📍 Based in Nigeria
+        </p>
+        <p>
+            I work with individuals and businesses across Nigeria and can also work remotely with clients from other countries.
+        </p>
+    </div>
+</section>
+<section class="faq">
+    <h2>Frequently Asked Questions</h2>
+    <div class="card">
+        <h3>How long does it take to build a website?</h3>
+        <p>It depends on the project. A simple website may take a few days, while larger websites take longer.</p>
+    </div>
+    <div class="card">
+        <h3>Do you also design logos and flyers?</h3>
+        <p>Yes. I offer professional graphic design services including logos, flyers, banners, business cards and social media designs.</p>
+    </div>
+    <div class="card">
+        <h3>Do you sell quality slippers and shoes?</h3>
+        <p>Yes. I create quality slippers and shoes designed for comfort, durability and style.</p>
+    </div>
+    <div class="card">
+        <h3>How can I contact you?</h3>
+        <p>You can use the contact form on this website or reach me through my email, phone number or social media.</p>
+    </div>
+</section>
+<section id="project" class="project">
+    <h2>My Projects</h2>
+	<div class="card">
+	    <img src="images/website.jpg"
+	alt="Portfolio Website"
+	loading="lazy">
+	    <h3>🌐 Personal Portfolio Website</h3>
+		<p>
+		    A professional portfolio website built with HTML, CSS and JavaScript to showcase my skills and services.</P>
+		<p><strong>Status:</strong> Completed ✅</p> 
+		<a href="https://github.com/chikamsoprosper"target="_blank"
+		rel="noopener noreferrer">
+		    <button>View Project</button>
+		</a>
+	</div>
+	<div class="card">
+	    <img src="images/design.jpg"
+	alt="Graphic Design"
+	loading="lazy">
+	    <h3>🎨 Graphic Design Portfolio</h3>
+		<p>
+		    A collection of my logos, flyers, banners and social media designs.</p>
+	<a href="designs.html">
+		<button>View Designs</button>
+	</a>
+	</div>
+	<div class="card">
+	    <img src="images/shoes.jpg"
+	alt="Quality Footwear"
+	loading="lazy">
+	    <h3>👞 Footwear Collection</h3>
+		<p>
+		    A showcase of my premium slippers and shoes made with quality materials.</p>
+	<a href="footwear.html">
+		<button>View Collection</button>
+	</a>
+	</div>
+</section>
+<section id="gallery">
+    <h2>My Gallery</h2>
+	<p>
+	Explore some of my graphic designs, website projects, and quality footwear creation.
+	</p>
+	<div class="gallery">
+	    <img src="images/design1.jpg" alt="Graphic Design">
+		<img src="images/design2.jpg" alt="Graphic Design">
+		<img src="images/shoe1.jpg" alt="Quality Slippers">
+		<img src="images/shoe2.jpg" alt="Quality shoes">
+		<img src="images/website1.jpg" alt="Website project">
+		<img src="images/website2.jpg" alt="Website project">
+	</div>
+</section>
+<section class="goals">
+	<h2>My Goals</h2>
+	<ul>
+	    <li>Grow my footwear business while building my career in technology.</li>
+	    <li>Become a skilled computer scientist and software developer.</li>
+		<li>Build websites and web applications that solve real-world problems.</li>
+		<li>Continue improving my programming skills every day.</li>
+		<li>Create innovative technology that helps people.</li>
+		<li>Build a trusted brand that provides quality digital and creative services worldwide.</li>
+	</ul>
+</section>
+<section class="hire-me">
+    <h2>Let's Work Together</h2>
+    <p>
+        Are you looking for a professional website, creative graphic designs,
+        or quality slippers and shoes?
+    </p>
+    <p>
+        I am ready to help bring your ideas to life with quality work and
+        excellent customer service.
+    </p>
+	<p>
+	Let's discuss your project today and turn your ideas into reality.
+	</p>
+    <a href="#contact">
+        <button>Hire Me</button>
+    </a>
+</section>
+<section id="contact">
+    <h2>Contact Me</h2>
+    <form
+	action="https://formsubmit.co/chikamsoprosper2008@gmail.com" method="POST">
+        <input 
+		type="text"
+		name="name"
+        placeholder="Your Name"
+        required>
+        <input 
+		type="email"
+		name="email"
+        placeholder="Your Email"
+        required>
+        <input 
+		type="tel"
+		name="phone"
+        placeholder="Your Phone Number">
+        <textarea
+		name="message"
+        placeholder="Write your message here..."
+        rows="6"
+        required></textarea>
+		<input
+type="hidden"
+name="_subject"
+value="New Message From Prosperous Studios Website">
+<input
+type="hidden"
+name="_captcha"
+value="false">
+        <button type="submit">
+            Send Message
+        </button>
+    </form>
+    <br>
+    <p><strong>Email:</strong> chikamsoprosper2008@gmail.com</p>
+    <p><strong>Phone:</strong> 07019744000</p>
+</section>
+<section class="social">
+    <h2>Connect With Me</h2>
+	<a
+href="https://www.facebook.com/profile.php?id=61571587648793"target="_blank" rel="noopener noreferrer">Facebook</a><br><br>
+    <a
+href="https://wa.me/2347019744000"target="_blank" rel="noopener noreferrer">Whatsapp</a><br><br>
+    <a
+href="https://tiktok.com/@loverboydaily"target="_blank" rel="noopener noreferrer">Tiktok</a><br><br>
+<a href="https://github.com/chikamsoprosper"target="_blank" rel="noopener noreferrer">GitHub</a><br><br>
+<a href="https://www.linkedin.com/in/chikamso-prosper-52062b421"target="_blank" rel="noopener noreferrer">LinkedIn</a>
+</section>
+<footer>
+    <h3>Prosperous Studios</h3>
+    <p>
+        Web Developer | Graphic Designer | Quality Slippers & Shoes
+    </p>
+    <p>
+        📧 chikamsoprosper2008@gmail.com
+    </p>
+    <p>
+        📞 +234 701 974 4000
+    </p>
+    <p>
+        © <span id="year"></span> Prosperous Studios. All Rights Reserved.
+    </p>
+<div class="quick-links">
+    <h4>Quick Links</h4>
+	<a href="#top">Home</a><br>
+    <a href="#about">About</a><br>
+	<a href="#service">Services</a><br>
+    <a href="#project">Projects</a><br>
+    <a href="#gallery">Gallery</a><br>
+    <a href="#contact">Contact</a>
+</div>
+<a href="#top" class="back-top">⬆️ Back to Top</a>
+<p>
+<a href="https://github.com/chikamsoprosper"target="_blank" rel="noopener noreferrer">GitHub</a> |
+<a href="https://wa.me/2347019744000"target="_blank" rel="noopener noreferrer">WhatsApp</a> |
+<a href="https://tiktok.com/@loverboydaily"target="_blank" rel="noopener noreferrer">TikTok</a>
+</p>
+</footer>
+<script>
+document.getElementById("year").textContent =new Date().getFullYear();
+</script>
+</body>
+</html>
