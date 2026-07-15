@@ -15,8 +15,8 @@ Contact section
 CV download button
 Live Demo
 (https://chikamsoprosper.github.io/My-portfolio/)
-Screenshot
-(images/portfolio-screenshot.jpg)
+## Screenshot
+![portfolio screenshot(images/portfolio-screenshot.jpg)
 Author
 Chikamso Prosper
 GitHub: (https://github.com/chikamsoprosper)
