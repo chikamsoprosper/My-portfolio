@@ -14,9 +14,9 @@ Projects section
 Contact section
 CV download button
 Live Demo
-(https://github.com/chikamsoprosper)
+(https://chikamsoprosper.github.io/My-portfolio/)
 Screenshot
-(Add a picture of your website here)
+(images/portfolio-screenshot.jpg)
 Author
 Chikamso Prosper
 GitHub: (https://github.com/chikamsoprosper)
